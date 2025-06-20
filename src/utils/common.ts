@@ -29,6 +29,8 @@ export const urlMap = {
     ppofficial: 'https://ppofficial.pages.dev/',
     configdoc: 'https://ppofficial.pages.dev/guide/config.html',
     phonedoc: 'https://www.pakeplus.com/guide/phone.html',
+    builddoc: 'https://www.pakeplus.com/guide/build.html',
+    questiondoc: 'https://pakeplus.com/question/',
     pakeplusdev: 'https://pakeplus.pages.dev/',
     weixin: 'https://github.com/Sjj1024/PakePlus',
     qq: '',
@@ -281,10 +283,12 @@ export const isTauri = (window as any).__TAURI__ ? true : false
 // open url or file or path
 export const openUrl = async (url: string) => {
     console.log('url', url)
-    if (isTauri) {
+    if (isTauri && url) {
         await invoke('open_url', { url })
-    } else {
+    } else if (url) {
         window.open(url, '_blank')
+    } else {
+        ElMessage.error('URL或文件路径不能为空')
     }
 }
 

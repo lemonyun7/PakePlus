@@ -65,7 +65,7 @@ export default {
     releaseNotes: '发布说明',
     inputRelNotes: '请输入发布说明',
     pubNotesTips:
-        '注：移动端配置和打包请从右上角手机图标进入，桌面端打包大概需要9分钟左右，打包过程中不要做任何操作，请耐心等待...',
+        '注：移动端配置和打包请从右上角手机图标进入，桌面端打包大概需要9分钟左右，打包过程中不要做任何操作，详细文档请点击',
     inputWebPlaceholder: '请输入网站地址',
     inputAppNamePlaceholder: '请输入APP名称',
     inputAppIdPlaceholder: '请输入APPID',
@@ -98,7 +98,7 @@ export default {
     assetSize: '资源大小',
     releaseDate: '发布日期',
     assetDesc:
-        '资源说明：dmg结尾的是macOS版本，deb结尾的是Linux版本，exe和msi结尾的是Windows版本，apk结尾的是Android版本，ipa结尾的是iOS版本，点击资源名称可以复制下载链接，点击下载会使用浏览器下载软件包。打包仅限个人使用，请勿用于传播或商业用途，否则后果自负。',
+        '资源说明：dmg结尾的是macOS版本，deb结尾的是Linux版本，exe和msi结尾的是Windows版本，apk结尾的是Android版本，ipa结尾的是iOS版本，点击资源名称可以复制下载链接，点击下载会使用浏览器下载软件包。打包仅限个人使用，请勿传播或商业用途，否则后果自负。',
     githubRepo: '开源地址',
     navigation: '使用教程',
     buyCoffee: '💖赞助我们',
@@ -109,7 +109,7 @@ export default {
     copySuccess: '复制成功',
     delSuccess: '删除成功',
     aboutGuide:
-        'PakePlus开源免费，仅仅需要一个Github Token就可以将你的网页或Vue/React等项目打包成一个独立可执行程序，支持Windows/macOS/Linux系统，还支持Android/iOS移动端。有问题可以进交流群，备注: PakePlus，或者可以给我发送邮件：{email}。打包仅限个人使用，请勿用于传播或商业用途，打包资源会存储在你自己的Github开源仓库中，任何人都可以看得到，所以请严格遵守Github使用规范，否则后果自负。',
+        'PakePlus开源免费，仅仅需要一个Github Token就可以将你的网页或Vue/React等项目打包成一个独立可执行程序，支持Windows/macOS/Linux系统，还支持Android/iOS移动端。有问题可以进交流群，备注: PakePlus，或者可以给我发送邮件：{email}。打包仅限个人使用，请勿传播或商业用途，打包资源会存储在你自己的Github开源仓库中，任何人都可以看得到，所以请严格遵守Github使用规范，否则后果自负。',
     followme: '关注我们',
     moreConfig: '更多配置',
     superpower: '能力演示',

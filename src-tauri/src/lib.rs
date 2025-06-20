@@ -31,7 +31,6 @@ pub fn run() {
             );
             menu
         })
-        .plugin(tauri_plugin_opener::init())
         .plugin(tauri_plugin_os::init())
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_dialog::init())
@@ -67,7 +66,8 @@ pub fn run() {
             command::cmds::notification,
             command::cmds::run_command,
             command::cmds::get_env_var,
-            command::cmds::find_port
+            command::cmds::find_port,
+            command::cmds::get_exe_dir,
         ])
         .setup(|app| {
             tauri::async_runtime::block_on(async move {
